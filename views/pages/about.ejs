@@ -1,0 +1,86 @@
+<!-- About pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<header>
+  <%- include('../partials/header', {variant: 'compact'}); %>
+</header>
+
+<body class="container">
+<!--ABOUT sivu
+- tänne voisi kirjoittaa itsestä pikasen, lisätä yhden kuvan & oma tilanne (koulutus as opiskelija, työssä tai muu)
+
+-vahvuudet ja hyvä missäkin tekniikassa
+
+-sosiaaliset mediat, linkedin, github ja jne (ei ihan kaikkia, mutta osat linkkeistä)
+ -->
+
+
+<!-- Tässä jaukuu kahteen osaan palikkaan riviin-->
+<main>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1>Infot</h1>
+        <p>Olen (1996) syntynyt nuori kaveri ja Helsingistä. Intohimona on rakentaa monipuolisia IT- laiteitta ja tutustua arkkitehtien rakenteeseen</p>
+
+      <!-- Download files -->
+      <li> <a href="../files/asdf.pdf" download><b>CV saatavilla</b></a></li>
+
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <img src="../images/Garfield_chips.gif" width="240" height="240"></img>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!--Toinen about laatikko alempana -->
+<!-- 
+<div class="row">
+  <div class="col-sm-12">
+    <div class="jumbotron">
+      <h1>Erityiset osaamiset</h1>
+      <h3>IT taidot</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+   <div class="jumbotron">
+      <h3>Something</h3>
+        <p>Where is my money</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Kielitaidot</h3>
+        <ul>
+          <li>Suomi (sujuva)</li>
+          <li>Kiina (Kanton hyvä, vain suullinen)</li>
+          <li>Englanti (hyvä) </li>
+          <li>Ruotsi (alkeet) </li>
+        </ul>
+    </div>
+  </div>
+</div>-->
+<%- include('../partials/about-2'); %>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

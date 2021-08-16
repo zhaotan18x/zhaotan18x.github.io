@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- This is home page -->
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+<!-- DEFAULT HOMEPAGE
+- yksi galleria missä kuvat itsestään vaihtuvat esim. 5-8 kuvaa
+- n. 2-5 projektia näytöllä pelkä kuva tai muu pikainen selostus
+
+- pikainen sosiaali media linkkit & icons, copyright & ehkä yhteystiedot
+-->
+
+<!-- valikkot home/about / ja jne-->
+<main>
+  <div class="jumbotron">
+    <h1>About Me</h1>
+    <p>Hei! Nimeni on ZT. Olen nuori kaveri, joka on kiinnostunut tietoliikennetekniikkoihin. Tällä hetkellä opiskelen tietotekiikkaa HAMK ammattikorkeakoulua Riihimäellä ja tavoitteena on pian valmistautua insinööriksi 2022 menessä. Aloitin tämän koulutuksen v.2018 vuoden alussa, ja nyt enään puuttuisi harjoittelu prosessi. Suuntautumisessa on joko tietoliikenne- tai ict asentaja, että asentaa monipuolisia tietoverkkoasennuksia, verkkolaiteitta ja muita atk-laiteitta. </p>
+
+    <br><p>Ennen ammattikorkeakoulua opiskelin perustutkinnoltaan sähköasentajaksi Stadin Ammattiopistossa, Helsingissä. Valmistumisen jälkeen ehdin työskennellä sähköasentajana n. alle 6kk. </p>
+
+    <br><b><a href="/about">Lisää tietoa</a></b>
+    
+
+  </div>
+
+<!-- Automaatinen galleria show  -->
+  <div class="jumbotron">
+    <h3>Automaatinen galleria </h3>
+      <%- include('../partials/galleryIndex');%>
+  </div>
+</main>
+
+<!-- Copyright homma-->
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+
+</body>
+</html>
