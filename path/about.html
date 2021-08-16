@@ -1,74 +1,99 @@
+<!-- About pages -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+<head>
+  <div id="head"></div>
+</head>
 
-    <!-- EJS (Html) title blah blah -->
-    <meta charset="UTF-8">
-    <title>Mynthix</title>
+<header>
+  <div id="header"></div>
+</header>
 
-    <!-- CSS (load bootstrap from a CDN) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-      body { padding-top:50px; }
-    </style>
+<body class="container">
+<!--ABOUT sivu
+- tänne voisi kirjoittaa itsestä pikasen, lisätä yhden kuvan & oma tilanne (koulutus as opiskelija, työssä tai muu)
+
+-vahvuudet ja hyvä missäkin tekniikassa
+
+-sosiaaliset mediat, linkedin, github ja jne (ei ihan kaikkia, mutta osat linkkeistä)
+ -->
+
+ <!--Jquery scriptti, mitä kuin lukaisee polku tiedoston, että määrittää objektin ja tämmöinen toinen sivusto liitettään pääkotisivulle ja yms settiä -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("../partials/header.html"); 
+      $("#footer").load("../partials/footer.html"); 
+      $("#head").load("../partials/head.html");
+      $("#about-2").load("../partials/about-2.html");
+    });
+    </script> 
 
 
-  </head>
-  <body class="container">
-    <script src="script.js"></script>
+<!-- Tässä jaukuu kahteen osaan palikkaan riviin-->
+<main>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1>Infot</h1>
+        <p>Olen (1996) syntynyt nuori kaveri ja Helsingistä. Intohimona on rakentaa monipuolisia IT- laiteitta ja tutustua arkkitehtien rakenteeseen</p>
 
-    <header>
-      <!-- Nav bar  blah blah -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">Mynthix <p><small>Kotisivu</small></p>
-      </a>
-      
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
+      <!-- Download files -->
+      <li> <a href="../files/asdf.pdf" download><b>CV saatavilla</b></a></li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-
-      </ul>
-    </nav>
-    </header>
-
-  <main>
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="jumbotron">
-        <h1>This is About</h1>
-        <p>Welcome to templating using EJS</p>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="well">
-        <h3>Hei! Katso tänne!</h3>
-          <p>Pilasitko mun ruokahaluni?</p>
-      </div>
     </div>
   </div>
-  </main>
 
-<!-- Copyright homma-->
-  <footer>
-    <div id="footer">
-      <p class="text-center text-muted">&copy; Copyright 2018 - 2021 Pälä pälä</p>
+  <div class="col-sm-4">
+    <div class="well">
+      <img src="../images/Garfield_chips.gif" width="240" height="240"></img>
     </div>
-  </footer>
+  </div>
+</div>
 
+</main>
 
-  </body>
+<!--Toinen about laatikko alempana -->
+<!-- 
+<div class="row">
+  <div class="col-sm-12">
+    <div class="jumbotron">
+      <h1>Erityiset osaamiset</h1>
+      <h3>IT taidot</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+   <div class="jumbotron">
+      <h3>Something</h3>
+        <p>Where is my money</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Kielitaidot</h3>
+        <ul>
+          <li>Suomi (sujuva)</li>
+          <li>Kiina (Kanton hyvä, vain suullinen)</li>
+          <li>Englanti (hyvä) </li>
+          <li>Ruotsi (alkeet) </li>
+        </ul>
+    </div>
+  </div>
+</div>-->
+<div id="about-2"></div>
+
+<div id="footer"></div>
+
+</body>
 </html>
