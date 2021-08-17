@@ -1,0 +1,90 @@
+<!--Blog Second page -->
+<!DOCTYPE>
+<html>
+<head>
+  <div id="head"></div>
+</head>
+
+<!-- valikkot home/about/ ja jne-->
+<header>
+  <div id="header"></div>
+</header>
+
+<body class="container">
+<!--BLOG aiheita & yms:::
+-tämä on BLOG - 2 sivu
+
+ -->
+
+  <!--Jquery scriptti, mitä kuin lukaisee polku tiedoston, että määrittää objektin ja tämmöinen toinen sivusto liitettään pääkotisivulle ja yms settiä -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("/partials/header.html"); 
+      $("#footer").load("/partials/footer.html"); 
+      $("#head").load("/partials/head.html");
+      $("#blog-2").load("/partials/blog-2.html");
+    });
+    </script> 
+
+<!--Oma bloggi aihe (2 ja jne) -->
+<main>
+<div class="row">
+  <div class="leftcolumn">
+    
+    <!--First card subject START HERE -->
+    <div class="card">
+      <h2>Kesä tutkimus 2021 </h2>
+      <h5>Verkkonarkkitehtuuri, 6-7, 2021</h5>   
+
+      <div class="w3-container">
+        <img src="../images/network-arch1.jpg" style="height: 250px; width:480px;"></img>
+      </div>
+
+      <p>Oma pieni kesäinen tutkimus verkkoarkkitehtuurista, verkko tyypistä, IEEE 802 standradi aiheesta, ja TCP ja UDP välisen erot. Kesän aikana tutustuin verkkoarkkitehtuuriin, mikä on tietoverkon suunnittelua ja sen käyttöä Internetin protokollan pakettia. Ei vain mallilla verkkojen tai verkon solmujen yhdistämistä tai tietyntyyppistä laitteiston linkitystä. Verkkoja Internet arkkitehtuurissa kerrottaan kaksi tyypistä viitemallia kuin OSI ja TCP/IP. </p> 
+      
+      <p> Tietoverkojen tyypistä saatettaan käyttää suunnittelussa, käyttöönotto tarkoitusta ja vaikutuksen OSI- ja TCP/IP mallisen tiedonsiirtoprotokollaan. Tietoverkkojen tyyppiä voi kulkea joko langallisena, langattomana tai yksityisen verkkona, mikä yhdistyy suoraan työpaikan toimistoon. Jokaisen verkon tyypissä on oma tekijän teknisen ominaisuus ja tiedot. Kansainvälisen IEEE organisaatiossa sisäisen toi-minnassa kulkeutuu monipuolisia standardeja, tässä kerrottaan standardijärjestelmä 802:sta.</p>
+
+      <p> IEEE 802 toiminnassa käsitellään osa fyysisen kaapeloinnin strategia, että kuinka vaikuttaa fyysisen tietoverkon tyypin toimintaan. 802 standardijärjestelmässä ja-kautuu useisiin toimintoihin kuin langallinen, langaton, laajakaista ja kuituoptiikan toimintoa, että osan teknisen toiminnat ovat joko yhä käynnissä, tauolla tai päätty-nyt. </p> 
+
+      <p>OSI- ja TCP/IP-mallissa on pientä yhteistä protokollaa, esim. OSI mallissa on 7 kerrosta ja TCP/IP mallissa on 4 kerrosta. Molemmissa mallissa on melko samoja toimintoja, mutta varsinaisen teknisen ominaisuudessa voi olla eroja. Jokaisessa kerroksessa on oma toiminta, että kuinka kerrokset tukevat toisiaan. </p>
+    </div><!--First card subject ENDS HERE -->
+    
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, May 2, 2018</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci nisl, porttitor consectetur lacus sit amet, maximus convallis nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+    </div>
+
+  </div>
+</div>
+</main>
+
+<!-- w3 border container palikka -->
+<div id="blog-2"></div>
+
+<!-- Bloggien sivu määrä, ettei tarvi julkaista ihan kaikkia -->
+<div style="text-align: center; margin: auto; background-color: #e6e6e6;">
+  <section>
+    <p>Skip the pages</p>
+    <a href="blog">1</a>
+    <a href="#"><u>2</u></a>
+    <a href="blog-3">3</a>
+    <a href="blog-4">4</a>
+  </section>
+</div>
+<br>
+
+<!-- Copyright homma-->
+<footer>
+  <div id="footer"></div>
+</footer>
+
+</body>
+</html>
