@@ -1,0 +1,61 @@
+<!--Contract page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div id="head"></div>
+</head>
+<body class="container">
+
+<header>
+  <div id="header"></div>
+</header>
+
+<body class="container">
+<!--Contract sivu
+
+Riittää vain lisää sijainnin eli kaupunki, maa
+puh. +358 44 1234 5678
+email: blah@outlook.com
+
+ -->
+
+  <!--Jquery scriptti, mitä kuin lukaisee polku tiedoston, että määrittää objektin ja tämmöinen toinen sivusto liitettään pääkotisivulle ja yms settiä -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+    $(function(){
+      $("#header").load("../partials/header.html"); 
+      $("#footer").load("../partials/footer.html"); 
+      $("#head").load("../partials/head.html");
+    });
+  </script> 
+
+<!-- valikkot home/about/ ja jne-->
+<main>
+
+  <div class="jumbotron">
+    <h1>Yhteystiedot</h1>
+    <p>Tantta Mynthix</p>
+
+    <ul>
+    <li><i class="bi bi-phone"> +358 45 1234 5678</i></li>
+    <li><i class="bi bi-mailbox"></i> Blah@outlook.com</li>
+    
+    <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/" target="_blank"> Linkedin Profile </a> </li>
+    <li><i class="bi bi-github"></i><a href="https://github.com/zhaotan18x" target="_blank"> Github profiili</a></li>
+
+    </ul>
+    
+  </div>
+</main>
+
+<!-- Copyright homma-->
+<footer>
+  <div id="footer"></div>
+</footer>
+
+</body>
+</html>
