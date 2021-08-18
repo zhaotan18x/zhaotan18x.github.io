@@ -7,7 +7,6 @@
   <div class="container">
   <!--Home icon kotisivu -->
   
-   <!--Pikku kotilogo -->
   <a class="navbar-brand" href="/">ZT<br><i class="bi bi-house-door-fill">
   </i></a>
 
@@ -18,39 +17,37 @@
   
   <div id="navbarCollapse" class="collapse navbar-collapse">
   <ul class="navbar-nav mr-auto">
+    
     <li class="nav-item">
-      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/index.html">Home</a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="../path/about.html">About</a>
+      <a class="nav-link" href="/path/about.html">About</a>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link" href="../path/blog.html">Blog</a>
-    </li>
+    <!--Skills drop menu buttons -->
+    <div class="btn-group">
+      <a class="nav-link "href="/path/skills.html">Skills</a>
+        <button class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+        </button>
 
-    <li class="nav-item">
-      <a class="nav-link" href="../path/contract.html">Contract</a>
-    </li>
-
-    <!-- Skills drop menu-->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/skills.html" aria-haspopup="true" aria-expanded="false">Skills</a>
-
-      <ul class="sub nav-item">
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="/skills">IT Stats</a>
-          <a class="dropdown-item" href="/hamk">HAMK</a>
-          <a class="dropdown-item" href="/amis">Amis</a>
-
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://www.hamk.fi/" target="_blank">HAMK ICT tutkinto</a>
-
-        </div>
+      <ul class="dropdown-menu">
+        <!-- dropdown menu links -->
+        <a class="dropdown-item" href="/hamk">HAMK</a>
+        <a class="dropdown-item" href="/amis">Amis</a>
       </ul>
-      
-    </li> <!-- Skills drop menu ENDS HERE-->
+
+    </div> <!-- Skills drop menu ENDS HERE-->
+
+    <li class="nav-item">
+      <a class="nav-link" href="/path/blog.html">Blog</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="/path/contract.html">Contract</a>
+    </li>
     
     <!--Muu -->
     <li class="nav-item">
