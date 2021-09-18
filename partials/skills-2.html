@@ -1,9 +1,6 @@
 <style>
   /* css kommentti/muistiinpannossa ympäristössä käytä tätä */
  /*TÄMÄ ON /PARTIALS/SKILLS-2.HTML
-tänne tulee SKILLS sivustoon oma editoinnit ja yms.	
-*/
-
 /* mh-skills START HERE */
 .mh-skills .mh-professional-skills {
   padding-right: 60px;
@@ -21,10 +18,11 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 
 .mh-hardware-skills {
   padding-left: 20%;
+  //color: white;
 
 }
 
-/* mh-hardware START HERE */
+/* Oikea valikko mh-hardware START HERE */
 .mh-hardware-skills h3 {
   font-size: 30px;
   line-height: 40px;
@@ -82,34 +80,36 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
   stroke: rgba(0, 0, 0, 0.7);
 }
 
-/*ympyrän värin ulko pinann väri & väri kohdistaa siihen lukuun mitä haluttaan kuin nähdä esim. 100% koko rengas, 50% puolet ja jne.*/
+/*ympyrän värin ulkoisen pinnan väri & väri kohdistaa siihen lukuun mitä haluttaan kuin nähdä esim. 100% koko rengas, 50% puolet ja jne.*/
 .mh-progress path:nth-child(2){
   stroke: #1de5f0 !important;
 }
 
-/* vasemman valikkon palikkat */
-.condidatos{
+/* Oikea valikko mh-hardware ENDS HERE */
+
+/* vasemman valikkon palikkat START HERE*/
+.candidatos{
   position: relative;
   margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sans-serif';
 }
 
-.condidatos .parcial {
+.candidatos .partical {
   display: inline-block;
   width: 100%;
   vertical-align: middle; 
 }
-.condidatos .parcial .info .name{
+.candidatos .partical .info .name{
   position: absolute;
   top: 0;
   left: 0;
   font-size: 15px;
   font-weight: 600;
   opacity: 0.9;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'sans-serif';
 }
 
-.condidatos .parcial .info .percetage-num{
+.candidatos .partical .info .percetage-num {
   position: absolute;
   top: 0;
   right: 0;
@@ -117,28 +117,42 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
   font-weight: normal;
 }
 
-.condidatos .parcial .progrssBar {
+.candidatos .partical .progrssBar {
   position: relative;
   width: 100%;
   height: 7px;
-  margin: 30px 0 2px;
+  margin: 39px 0 2px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.condidatos .parcial .percentagem {
+.candidatos .partical .percentagem {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   height: 7px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  /* baarin värin ulkoisen pinnan väri & väri kohdistaa siihen lukuun mitä haluttaan kuin nähdä esim. 100% koko baari, 50% puolet ja jne.*/
   background: #1de5f0;
-  transition: 3s all;
-  animation-name: animationProgress;
-  font-family: 'Poppins', sans-serif;
+
+
+  -webkit-transition: 3s all;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: animationProgress;
+  font-family: 'sans-serif';
 }
+
+
+@keyframes animationProgress {
+  from {
+    width: 0;
+  }
+}
+
+
+/* vasemman valikkon palikkat ENDS HERE*/
 
 </style>
 
@@ -155,11 +169,11 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 						<div class="each-skills">
 
 							<!-- Nodejs -->
-							<div class="condidatos">
+							<div class="candidatos">
 								<div class="partical">
 									<div class="info">
 										<div class="name">Nodejs</div>
-										<div class="percetage-num">68%</div>
+										<div class="percetage-num">70%</div>
 									</div>
 
 									<div class="progrssBar">
@@ -169,7 +183,7 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 							</div>
 
 							<!-- HTML-CSS-JS -->
-							<div class="condidatos">
+							<div class="candidatos">
 								<div class="partical">
 									<div class="info">
 										<div class="name">HTML-CSS-JS</div>
@@ -183,7 +197,7 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 							</div>
 
 							<!-- C# Csharp -->
-							<div class="condidatos">
+							<div class="candidatos">
 								<div class="partical">
 									<div class="info">
 										<div class="name">C# </div>
@@ -197,7 +211,7 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 							</div>
 
 							<!-- Python -->
-							<div class="condidatos">
+							<div class="candidatos">
 								<div class="partical">
 									<div class="info">
 										<div class="name">Python </div>
@@ -223,7 +237,7 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 					<ul class="mh-hardware-progress">
 
 						<li>
-							<div class="mh-progress mh-progress-circle" data-progress="65"></div>
+							<div class="mh-progress mh-progress-circle" data-progress="67"></div>
 							<div class="pr-skill-name">Cisco networking</div>
 						</li>
 
@@ -233,12 +247,12 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 						</li>
 
 						<li>
-							<div class="mh-progress mh-progress-circle" data-progress="64"></div>
+							<div class="mh-progress mh-progress-circle" data-progress="59"></div>
 							<div class="pr-skill-name">ICT/Sähköasentaja</div>
 						</li>
 
 						<li>
-							<div class="mh-progress mh-progress-circle" data-progress="52"></div>
+							<div class="mh-progress mh-progress-circle" data-progress="49"></div>
 							<div class="pr-skill-name">Linux/Unix</div>
 						</li>
 
@@ -250,7 +264,6 @@ tänne tulee SKILLS sivustoon oma editoinnit ja yms.
 	</div>
 </section>
 <!-- Skills & Chart markup ENDS HERE -->
-
 
 <!-- Script START HERE & HUOM. tarkista polku, että missä kansiossa on nää scripttit tai muu tiedostot -->
 <script src="../circle-progress.js"></script>
