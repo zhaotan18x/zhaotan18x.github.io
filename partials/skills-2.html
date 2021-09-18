@@ -1,0 +1,253 @@
+<style>
+  /* css kommentti/muistiinpannossa ympäristössä käytä tätä */
+
+/* mh-skills START HERE */
+.mh-skills .mh-professional-skills {
+  padding-right: 60px;
+  color: black;
+}
+
+.mh-skills .mh-professional-skills h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mh-hardware-skills {
+  padding-left: 20%;
+
+}
+
+/* mh-hardware START HERE */
+.mh-hardware-skills h3 {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  /* color: white; */ 
+}
+
+.mh-hardware-progress li{
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width: 48%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mh-progress {
+  margin-bottom: 10px;
+  font: 900 1.14285/1 Cinzerl, cursive;
+  color: white;
+}
+
+/* two classes are predfined classes in the script circle-progress.js plugins */
+.mh-progress .progrssBar-text {
+  color: inherit !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.progress.progress-line{
+  height: 10px;
+  margin-right: 60px;
+}
+
+.progress.progress-line .progress-text{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 60px;
+  transform: translateY(-35%);
+  text-align: center;
+  font-family: 'Poppins', sans-serifM
+}
+
+.mh-progress.mh-progress.circle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+/* ympyrän värit, sisäisen ja ulko pinnan värit */
+.mh-progress path:nth-child(1){
+  stroke: rgba(0, 0, 0, 0.7);
+}
+
+/*ympyrän värin ulko pinann väri & väri kohdistaa siihen lukuun mitä haluttaan kuin nähdä esim. 100% koko rengas, 50% puolet ja jne.*/
+.mh-progress path:nth-child(2){
+  stroke: #1de5f0 !important;
+}
+
+/* vasemman valikkon palikkat */
+.condidatos{
+  position: relative;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.condidatos .parcial {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle; 
+}
+.condidatos .parcial .info .name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.condidatos .parcial .info .percetage-num{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.condidatos .parcial .progrssBar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.condidatos .parcial .percentagem {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #1de5f0;
+  transition: 3s all;
+  animation-name: animationProgress;
+  font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+<!-- Skills & Chart markup START HERE -->
+<section class="mh-skills" id="mh-skills">
+	<div class="container">
+		<div class="row">
+
+      <!--Vasen skills valikko START HERE -->
+			<div class="col-sm-12 col-md-6">
+				<div class="mh-skills-inner">
+					<div class="mh-professional-skills">
+						<h3>Techincal skills </h3>
+						<div class="each-skills">
+
+							<!-- Nodejs -->
+							<div class="condidatos">
+								<div class="partical">
+									<div class="info">
+										<div class="name">Nodejs</div>
+										<div class="percetage-num">70%</div>
+									</div>
+
+									<div class="progrssBar">
+										<div class="percentagem" style="width: 86%;"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- HTML-CSS-JS -->
+							<div class="condidatos">
+								<div class="partical">
+									<div class="info">
+										<div class="name">HTML-CSS-JS</div>
+										<div class="percetage-num">63%</div>
+									</div>
+
+									<div class="progrssBar">
+										<div class="percentagem" style="width: 63%;"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- C# Csharp -->
+							<div class="condidatos">
+								<div class="partical">
+									<div class="info">
+										<div class="name">C# </div>
+										<div class="percetage-num">54%</div>
+									</div>
+
+									<div class="progrssBar">
+										<div class="percentagem" style="width: 54%;"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Python -->
+							<div class="condidatos">
+								<div class="partical">
+									<div class="info">
+										<div class="name">Python </div>
+										<div class="percetage-num">43%</div>
+									</div>
+
+									<div class="progrssBar">
+										<div class="percentagem" style="width: 43%;"></div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div> <!-- col-sm-12 col-md-6 ENDS HERE / VASEN skills valikko -->
+
+      <!-- Oikea valikko START HERE -->
+			<div class="col-sm-12 col-md-6">
+				<div class="mh-hardware-skills">
+					<h3>Hardware Skills</h3>
+					<ul class="mh-hardware-progress">
+
+						<li>
+							<div class="mh-progress mh-progress-circle" data-progress="67"></div>
+							<div class="pr-skill-name">Cisco networking</div>
+						</li>
+
+						<li>
+							<div class="mh-progress mh-progress-circle" data-progress="64"></div>
+							<div class="pr-skill-name">WAN/LAN/WLAN</div>
+						</li>
+
+						<li>
+							<div class="mh-progress mh-progress-circle" data-progress="59"></div>
+							<div class="pr-skill-name">ICT/Sähköasentaja</div>
+						</li>
+
+						<li>
+							<div class="mh-progress mh-progress-circle" data-progress="49"></div>
+							<div class="pr-skill-name">Linux/Unix</div>
+						</li>
+
+					</ul>
+				</div>
+			</div> <!-- col-md-6 col-md-6 ENDS HERE & OIKEA valikko -->
+
+		</div> <!-- div "row" ENDS HERE -->
+	</div>
+</section>
+<!-- Skills & Chart markup ENDS HERE -->
+
+
+<!-- Script START HERE & HUOM. tarkista polku, että missä kansiossa on nää scripttit tai muu tiedostot -->
+<script src="../circle-progress.js"></script>
