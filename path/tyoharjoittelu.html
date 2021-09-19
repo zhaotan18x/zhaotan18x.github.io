@@ -1,4 +1,4 @@
-<!--Työharjoittelu page -->
+<!--tämä on blog työharjoittelu oma sivu -->
 <!DOCTYPE html>
 <html lang="fi">
 
@@ -24,10 +24,11 @@
       $("#header").load("../partials/header.html"); 
       $("#footer").load("../partials/footer.html"); 
       $("#head").load("../partials/head.html");
+			$('#tyoharj_kuvat').load("../partials/tyohrajoittelu_gallery.html");
     });
 		</script>
 
-<main>
+<main> <!-- main START HERE -->
 
 <!--Työharjoittelun bloggi aihe -->
   <!-- Tänne vain kirjoitettaan työharjoittelu asiasta, että mitä olen tehnyt siellä n. muutaman viikkon takana -->
@@ -59,8 +60,11 @@
     </div><br>
 
   </div> <!--leftcolumn ENDS HERE -->
-</main>
+</main> <!-- main ENDS HERE -->
 
+	<div class="card">
+		<div id="tyoharj_kuvat"></div>
+  </div>
 
 <!-- Copyright homma-->
 <footer>
