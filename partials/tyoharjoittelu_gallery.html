@@ -1,0 +1,127 @@
+<!-- Tämä on työharjoittelu blog sivuston oma gallery teksti alue ja täällä on gallery show -->
+<h3>Työharjoittelu gallery show</h3>
+<p>asdf </p>
+
+    <!-- eka kuva -->
+    <a href="#img1">
+        <img class="thumb" src="http://vignette3.wikia.nocookie.net/dinocrisis/images/d/d5/Velociraptor.JPG/revision/latest?cb=20080319170329">
+    </a>
+    <!-- lightbox container hidden with CSS -->
+    <div class="lightbox" id="img1">
+        <a href="#img3" class="light-btn btn-prev">prev</a>
+            <a href="#_" class="btn-close">X</a>
+            <img src="http://vignette3.wikia.nocookie.net/dinocrisis/images/d/d5/Velociraptor.JPG/revision/latest?cb=20080319170329">
+        <a href="#img2" class="light-btn btn-next">next</a>
+    </div>
+
+    <!-- toinen kuva -->
+    <a href="#img2">
+      <img class="thumb" src="https://services.netwheels.fi/pienikuva/pienikuva/08894635_956__T202109081254T_IZJ302_1.JPG">
+    </a>
+    <!-- lightbox container hidden with CSS -->
+    <div class="lightbox" id="img2">
+      <a href="#img1" class="light-btn btn-prev">prev</a>
+        <a href="#_" class="btn-close">X</a>
+          <img src="https://services.netwheels.fi/pienikuva/pienikuva/08894635_956__T202109081254T_IZJ302_1.JPG ">
+        <a href="#img3" class="light-btn btn-next">next</a>
+    </div>
+
+    <!-- kolmas kuva -->
+    <a href="#img3">
+      <img class="thumb" src="http://th00.deviantart.net/fs70/PRE/f/2010/356/c/1/velociraptor_by_aerynv-d1t0m7w.jpg">
+    </a>
+    <!-- lightbox container hidden with CSS -->
+    <div class="lightbox" id="img3">
+        <a href="#img2" class="light-btn btn-prev">prev</a>
+            <a href="#_" class="btn-close">X</a>
+            <img src="http://th00.deviantart.net/fs70/PRE/f/2010/356/c/1/velociraptor_by_aerynv-d1t0m7w.jpg">
+        <a href="#img1" class="light-btn btn-next">next</a>
+    </div>
+
+<!-- Image kuvien style asetukset -->
+<style>
+.thumb {
+    max-height: 171px;
+    border: solid 6px rgba(5, 5, 5, 0.8);
+}
+
+.lightbox {
+    position: fixed;
+    z-index: 999;
+    height: 0;
+    width: 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+    opacity: 0;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    width: 100%;
+    height: 100%;
+    opacity: 1 !important;
+    
+}
+
+.lightbox:target img {
+    border: solid 17px rgba(77, 77, 77, 0.8);
+    opacity: 1;
+    webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.light-btn {
+    color: #fafafa;
+    background-color: #333;
+    border: solid 3px #777;
+    padding: 5px 15px;
+    border-radius: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    top: 45%;
+    z-index: 99;
+}
+
+.light-btn:hover {
+    background-color: #111;
+}
+
+/* oikea ylä kulman nappi, & sulkee kuva galleria show */
+.btn-prev {
+    left: 7%;
+}
+
+.btn-next {
+    right: 7%;
+}
+
+.btn-close {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #fafafa;
+    background-color: #92001d;
+    border: solid 5px #ef4036;
+    padding: 10px 15px;
+    border-radius: 1px;
+    text-decoration: none;
+}
+
+.btn-close:hover {
+    background-color: #740404;
+}
+
+</style>
