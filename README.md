@@ -3,3 +3,5 @@ Linkki, että pääsee portfolio bloggi sivustolle: <b> https://zhaotan18x.githu
 
 Tämä on lite versio & luettava portfolio, mutta testattu pieni editointi toisessa sivustossa
 https://liteportfolio-html-css-js.zhaotan18x.repl.co/index.html
+
+Portfoliossa on tämmöinen lite galleria show, että kuvat julkaistuu mitä olen tehnyt koulutuksen 2018-2021 aikana & erillisenä on lyhyesti työharjoituksesta, ja muu harjoitus projektit ja ohjelmointi ovat vain lyhyitä tekstiä.
