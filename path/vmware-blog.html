@@ -1,0 +1,44 @@
+<!--tämä on blog työharjoittelu oma sivu -->
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+	<div id="head"></div>
+
+</head>
+
+<body class="container">
+
+
+	<!-- valikkot home/about/ ja jne-->
+	<header>
+		<div id="header"></div>
+	</header>
+
+	<body class="container">
+
+		<!--Jquery scriptti, mitä kuin lukaisee polku tiedoston, että määrittää objektin ja tämmöinen toinen sivusto liitettään pääkotisivulle, navbar valikkot, social mediat tai olenainen teksti + css ja kuva muoto -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+
+		</script>
+		<script>
+			$(function(){
+      $("#header").load("../partials/header.html"); 
+      $("#footer").load("../partials/footer.html"); 
+      $("#head").load("../partials/head.html");
+    });
+		</script>
+
+<main> <!-- main START HERE -->
+
+  <h1>asdfsdafsdaf </h1>
+		
+</main> <!-- main ENDS HERE -->
+
+<!-- Copyright homma-->
+<footer>
+  <div id="footer"></div>
+</footer>
+
+</body>
+</html>
