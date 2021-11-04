@@ -1,4 +1,4 @@
-<!--tämä on blog työharjoittelu oma sivu -->
+<!--tämä on vmware harjoitus ympäristö oma sivu -->
 <!DOCTYPE html>
 <html lang="fi">
 
@@ -26,12 +26,47 @@
       $("#header").load("../partials/header.html"); 
       $("#footer").load("../partials/footer.html"); 
       $("#head").load("../partials/head.html");
+      $("#wmware_kuvat").load("../partials/wmware_gallery.html");
     });
 		</script>
 
-<main> <!-- main START HERE -->
+<!-- main START HERE -->
+<main>
 
-  <h1>asdfsdafsdaf </h1>
+<div class="jumbotron">    
+  <div class="card">
+		<h1>Syksyn 2021 virtuaalinen kone ympäristö</h1><br>
+
+    <div class="w3-container">
+    <img src="../images/Wmware_kuvat/unknown0.png" style="max-width; 100%;max-height: 100% "></img><br>
+    </div>
+
+		<h3>VMWare Workstation ohjelmisto virtuaalikone</h3>
+		<p>Ladattu VMware yrityksen ohjelmisto virtuaalinentietokone ympäristö. Oma fyysisen koneessa ladataan toinen virtuaalinen
+				tietokone ympäristö. Virtuaalisen tietokoneen ympäristössä ladataan useita tai rajoitettu toimintoja, mitä ohjeistukset
+				löytyy verkkosivulta.</p>
+		<b>Toistaiseksi ladattut ja kokeiltu sovellukset/työkalut: </b>
+
+<!-- Listaus -->
+<ul>
+  <li>Apache2</li>
+  <li>Wordpress</li>
+  <li>KeePass</li>
+  <li>SSH tietoliikenne protokolla</li>
+    <dd>- CLI </dd>
+    <dd>- Putty</dd>
+    <dd>- WinSCP</dd>
+  <li>Luotu toinen käyttäjä </li>  
+</ul>
+
+
+  </div>
+</div>
+
+	<!-- Kuva galleria oma dia/card -->
+	<div class="card">
+		<div id="wmware_kuvat"></div>
+  </div>
 		
 </main> <!-- main ENDS HERE -->
 
